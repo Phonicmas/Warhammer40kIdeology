@@ -1,0 +1,8 @@
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kFaction\1.4\Sources\Faction40k\obj\Debug\Faction40k.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kFaction\1.4\Sources\Faction40k\obj\Debug\Faction40k.csproj.CoreCompileInputs.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kFaction\1.4\Assemblies\Faction40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kFaction\1.4\Sources\Faction40k\obj\Debug\Faction40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kFactions\1.4\Mods\Royalty\Assemblies\Faction40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kFactions\1.4\Mods\Royalty\Sources\Faction40k\obj\Debug\Faction40k.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kFactions\1.4\Mods\Royalty\Sources\Faction40k\obj\Debug\Faction40k.csproj.CoreCompileInputs.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kFactions\1.4\Mods\Royalty\Sources\Faction40k\obj\Debug\Faction40k.dll

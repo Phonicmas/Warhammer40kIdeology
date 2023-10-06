@@ -1,0 +1,14 @@
+﻿using RimWorld;
+
+
+namespace Ideology40k
+{
+    [DefOf]
+    public static class Ideology40kDefOf
+    {
+        static Ideology40kDefOf()
+        {
+            DefOfHelper.EnsureInitializedInCtor(typeof(Ideology40kDefOf));
+        }
+    }
+}

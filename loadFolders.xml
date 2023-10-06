@@ -1,0 +1,9 @@
+<loadFolders>
+
+	<v1.4>
+		<li>/</li>
+		<li>1.4</li>
+		<li IfModActive="Phonicmas.Genes40k">1.4/Mods/Genes40k</li>
+	</v1.4>
+	
+</loadFolders>

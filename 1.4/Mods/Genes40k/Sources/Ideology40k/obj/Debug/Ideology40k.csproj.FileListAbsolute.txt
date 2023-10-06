@@ -1,0 +1,8 @@
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kIdeology\1.4\Assemblies\Ideology40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kIdeology\1.4\Sources\Ideology40k\obj\Debug\Ideology40k.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kIdeology\1.4\Sources\Ideology40k\obj\Debug\Ideology40k.csproj.CoreCompileInputs.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kIdeology\1.4\Sources\Ideology40k\obj\Debug\Ideology40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kIdeology\1.4\Mods\Genes40k\Assemblies\Ideology40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kIdeology\1.4\Mods\Genes40k\Sources\Ideology40k\obj\Debug\Ideology40k.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kIdeology\1.4\Mods\Genes40k\Sources\Ideology40k\obj\Debug\Ideology40k.csproj.CoreCompileInputs.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kIdeology\1.4\Mods\Genes40k\Sources\Ideology40k\obj\Debug\Ideology40k.dll

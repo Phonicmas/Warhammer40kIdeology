@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Warhammer 40k - Factions</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName = "BEWH_ImperiumFaction"]</xpath>
+            <value>
+                <allowedCultures>
+                    <li>BEWH_ImperiumCulture</li>
+                </allowedCultures>
+                <requiredMemes>
+                    <li>BEWH_Imperial</li>
+                    <li>Transhumanist</li>
+                    <li>HumanPrimacy</li>
+                    <li>Loyalist</li>
+                    <li>Proselytizer</li>
+                </requiredMemes>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

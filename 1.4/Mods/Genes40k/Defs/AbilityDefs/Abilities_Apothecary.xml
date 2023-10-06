@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityGroupDef>
+        <defName>BEWH_Apothecary</defName>
+        <cooldownTicks>15000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityDef Abstract="True" Name="BEWH_ApothecaryBase">
+        <iconPath>Things/Mote/SpeechSymbols/Speech</iconPath>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <targetRequired>true</targetRequired>
+        <hostile>false</hostile>
+    </AbilityDef>
+
+    <AbilityDef ParentName="BEWH_ApothecaryBase">
+        <defName>BEWH_ApothecaryHarvestGeneseeds</defName>
+        <label>harvest geneseeds</label>
+        <description>Harvest the geneseeds of a fallen brother.</description>
+        <groupDef>BEWH_Apothecary</groupDef>
+        <iconPath>UI/Abilities/LeaderSpeech</iconPath>
+        <showWhenDrafted>true</showWhenDrafted>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <range>-1</range>
+            <warmupTime>4</warmupTime>
+            <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetBloodfeeders>false</canTargetBloodfeeders>
+                <canTargetCorpses>true</canTargetCorpses>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="Ideology40k.CompProperties_AbilityGeneseedHarvest" />
+        </comps>
+    </AbilityDef>
+
+</Defs>

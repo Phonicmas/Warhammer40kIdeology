@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="PreceptRoleSingleBase">
+    <defName>BEWH_Apothecary</defName>
+    <label>Apothecary</label>
+    <description>The Apothecary is the one responsible for collecting the geneseeds of fallen brothers.</description>
+    <iconPath>UI/Roles/Moralist</iconPath>
+    <nameMaker>BEWH_NamerRoleApothecary</nameMaker>
+    <roleTags>
+      <li>BEWH_Apothecary</li>
+    </roleTags>
+    <requiredMemes>
+      <li>BEWH_Imperial</li>
+    </requiredMemes>
+    <displayOrderInImpact>2</displayOrderInImpact>
+    <grantedAbilities>
+      <li>BEWH_ApothecaryHarvestGeneseeds</li>
+    </grantedAbilities>
+  </PreceptDef>
+
+  <!-- Apothecary Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleApothecary</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->apothecary</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
