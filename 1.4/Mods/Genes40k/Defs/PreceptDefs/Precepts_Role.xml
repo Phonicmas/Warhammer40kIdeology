@@ -5,7 +5,7 @@
     <defName>BEWH_Apothecary</defName>
     <label>Apothecary</label>
     <description>The Apothecary is the one responsible for collecting the geneseeds of fallen brothers.</description>
-    <iconPath>UI/Roles/Moralist</iconPath>
+    <iconPath>UI/Roles/ApothecaryRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleApothecary</nameMaker>
     <roleTags>
       <li>BEWH_Apothecary</li>
@@ -17,6 +17,33 @@
     <grantedAbilities>
       <li>BEWH_ApothecaryHarvestGeneseeds</li>
     </grantedAbilities>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Medicine>10</Medicine>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTagAny>
+      <li>Caring</li>
+    </roleRequiredWorkTagAny>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatFactor">
+        <statDef>MedicalTendQuality</statDef>
+        <modifier>1.75</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatFactor">
+        <statDef>MedicalOperationSpeed</statDef>
+        <modifier>1.75</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatFactor">
+        <statDef>MedicalSurgerySuccessChance</statDef>
+        <modifier>1.75</modifier>
+      </li>
+      <li Class="RoleEffect_GiveThoughtOnTend">
+        <thoughtDef>BEWH_TendedByApothecary</thoughtDef>
+      </li>
+    </roleEffects>
   </PreceptDef>
 
   <!-- Apothecary Namemaker-->

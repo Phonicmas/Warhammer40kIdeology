@@ -64,7 +64,7 @@
     <Compile Include="Comp_AbilityGeneseedHarvest.cs" />
     <Compile Include="CompProperties_AbilityGeneseedHarvest.cs" />
     <Compile Include="Ideology40kMod.cs" />
-    <Content Include="Ideology40kDefOf.cs.txt" />
+    <Compile Include="Ideology40kDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

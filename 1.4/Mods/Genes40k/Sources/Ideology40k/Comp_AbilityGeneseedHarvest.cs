@@ -16,23 +16,26 @@ namespace Ideology40k
 
             Genes40kUtils.MakeGenePack40k(pawn, Genes40kUtils.IsPrimaris(pawn));
 
+            pawn.health.AddHediff(Ideology40kDefOf.BEWH_SecondGeneseedHarvest, null);
+
             base.Apply(target, dest);
         }
 
         public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
         {
-            Log.Message("Bep bop");
+            base.Valid(target, throwMessages);
             if (!(target.Thing is Corpse))
             {
                 return false;
             }
             Corpse corpse = target.Thing as Corpse;
 
-            if (corpse.InnerPawn.genes != null && corpse.InnerPawn.genes.HasGene(Genes40k.Genes40kDefOf.BEWH_ProgenoidGlands))
-            {
+            if (corpse.InnerPawn.genes != null && corpse.InnerPawn.genes.HasGene(Genes40kDefOf.BEWH_ProgenoidGlands) && !corpse.InnerPawn.health.hediffSet.HasHediff(Ideology40kDefOf.BEWH_SecondGeneseedHarvest))
+            {                
                 return true;
             }
             return false;
         }
+
     }
 }

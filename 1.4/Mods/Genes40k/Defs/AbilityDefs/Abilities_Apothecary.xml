@@ -7,10 +7,10 @@
     </AbilityGroupDef>
 
     <AbilityDef Abstract="True" Name="BEWH_ApothecaryBase">
-        <iconPath>Things/Mote/SpeechSymbols/Speech</iconPath>
         <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
         <targetRequired>true</targetRequired>
+        <showWhenDrafted>true</showWhenDrafted>
         <hostile>false</hostile>
     </AbilityDef>
 
@@ -19,8 +19,7 @@
         <label>harvest geneseeds</label>
         <description>Harvest the geneseeds of a fallen brother.</description>
         <groupDef>BEWH_Apothecary</groupDef>
-        <iconPath>UI/Abilities/LeaderSpeech</iconPath>
-        <showWhenDrafted>true</showWhenDrafted>
+        <iconPath>UI/Abilities/ApothecaryGeneseedHarvestIcon</iconPath>
         <jobDef>CastAbilityOnThingMelee</jobDef>
         <verbProperties>
             <verbClass>Verb_CastAbilityTouch</verbClass>

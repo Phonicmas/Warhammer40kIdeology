@@ -31,5 +31,7 @@
 		<li>ceteam.combatextended</li>
 		<li>Katavrik.CrashLanding</li>
 		<li>Phonicmas.40kCore</li>
+		<li>Phonicmas.40kGenes</li>
+		<li>Phonicmas.40kFactions</li>
 	</loadAfter>
 </ModMetaData>
