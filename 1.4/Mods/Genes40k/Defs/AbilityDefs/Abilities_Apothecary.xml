@@ -24,7 +24,7 @@
         <verbProperties>
             <verbClass>Verb_CastAbilityTouch</verbClass>
             <range>-1</range>
-            <warmupTime>4</warmupTime>
+            <warmupTime>8</warmupTime>
             <targetParams>
                 <canTargetPawns>false</canTargetPawns>
                 <canTargetBuildings>false</canTargetBuildings>
