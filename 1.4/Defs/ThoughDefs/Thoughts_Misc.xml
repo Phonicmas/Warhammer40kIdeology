@@ -23,7 +23,7 @@
     <stages>
       <li>
         <label>spoke to chapter champion</label>
-        <description>I interacted with our chapter champion!</description>
+        <description>I spoke with our chapter champion!</description>
         <baseOpinionOffset>2</baseOpinionOffset>
       </li>
     </stages>
@@ -37,7 +37,7 @@
     <stages>
       <li>
         <label>spoke to chapter champion</label>
-        <description>I interacted with our chapter champion!</description>
+        <description>I spoke with our chapter champion!</description>
         <baseMoodEffect>2</baseMoodEffect>
       </li>
     </stages>
