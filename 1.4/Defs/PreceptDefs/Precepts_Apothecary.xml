@@ -4,7 +4,7 @@
   <PreceptDef ParentName="PreceptRoleSingleBase">
     <defName>BEWH_Apothecary</defName>
     <label>Apothecary</label>
-    <description>The Apothecary is the one responsible for collecting the geneseeds of fallen brothers.</description>
+    <description>The Apothecary is responsible for collecting the geneseeds of fallen brothers and ensuring general health.</description>
     <iconPath>UI/Roles/ApothecaryRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleApothecary</nameMaker>
     <roleTags>
@@ -15,7 +15,7 @@
     </requiredMemes>
     <displayOrderInImpact>2</displayOrderInImpact>
     <grantedAbilities>
-      <li>BEWH_ApothecaryHarvestGeneseeds</li>
+      <li>ImmunityDrive</li>
     </grantedAbilities>
     <roleRequirements>
       <li Class="RoleRequirement_MinSkillAny">
@@ -30,15 +30,15 @@
     <roleEffects>
       <li Class="RoleEffect_PawnStatFactor">
         <statDef>MedicalTendQuality</statDef>
-        <modifier>1.75</modifier>
+        <modifier>1.6</modifier>
       </li>
       <li Class="RoleEffect_PawnStatFactor">
         <statDef>MedicalOperationSpeed</statDef>
-        <modifier>1.75</modifier>
+        <modifier>1.6</modifier>
       </li>
       <li Class="RoleEffect_PawnStatFactor">
         <statDef>MedicalSurgerySuccessChance</statDef>
-        <modifier>1.75</modifier>
+        <modifier>1.6</modifier>
       </li>
       <li Class="RoleEffect_GiveThoughtOnTend">
         <thoughtDef>BEWH_TendedByApothecary</thoughtDef>

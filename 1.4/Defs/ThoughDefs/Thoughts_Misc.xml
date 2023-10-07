@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>BEWH_TendedByApothecary</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>100</stackLimit>
+    <stages>
+      <li>
+        <label>tended by {0}</label>
+        <description>I received medical aid from an Apothecary!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BEWH_InteractedWithChampion</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Ideology40k.ThoughtWorker_Champion</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>spoke to chapter champion</label>
+        <description>I interacted with our chapter champion!</description>
+        <baseOpinionOffset>2</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BEWH_InteractedWithChampionMood</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>spoke to chapter champion</label>
+        <description>I interacted with our chapter champion!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

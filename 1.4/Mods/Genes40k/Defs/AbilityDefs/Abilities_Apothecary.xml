@@ -35,7 +35,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="Ideology40k.CompProperties_AbilityGeneseedHarvest" />
+            <li Class="Genes40k.CompProperties_AbilityGeneseedHarvest" />
         </comps>
     </AbilityDef>
 
