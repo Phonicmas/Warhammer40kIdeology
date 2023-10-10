@@ -4,7 +4,7 @@
   <PreceptDef ParentName="BEWH_SpaceMarineSingleRoleBase">
     <defName>BEWH_Chaplain</defName>
     <label>Chaplain</label>
-    <description>...</description>
+    <description>Space Marine Chaplains are the spiritual leaders of Space Marine Chapters, they fight alongside their battle-brothers, chanting the Chapter's sacred battle creeds, and inspiring their brethren to greater feats of bravery.</description>
     <iconPath>UI/Roles/ChaplainRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleChaplain</nameMaker>
     <certaintyLossFactor>0.05</certaintyLossFactor>
@@ -22,6 +22,7 @@
       <li>Reassure</li>
       <li>ConversionRitual</li>
       <li>PreachHealth</li>
+      <li>BEWH_ChaplainChant</li>
     </grantedAbilities>
     <roleRequirements>
       <li Class="RoleRequirement_MinSkillAny">

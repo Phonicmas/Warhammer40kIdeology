@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>BEWH_ChaplainAura</defName>
+        <label>chaplain chants</label>
+        <description>This person is chanting sacred chapter battle creeds. Everyone within an effect radius is inspired.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>19.9</range>
+                <mote>Mote_CombatCommand</mote>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetColonists>true</onlyTargetColonists>
+                </targetingParameters>
+                <hediff>BEWH_ChaplainAuraBuff</hediff>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef ParentName="CombatRoleAuraBuffHediffBase">
+        <defName>BEWH_ChaplainAuraBuff</defName>
+        <label>chaplain chants</label>
+        <description>Someone is chanting sacred chapter battle creeds. This person is inspired.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+                    <AimingDelayFactor>-0.3</AimingDelayFactor>
+                    <MeleeHitChance>3</MeleeHitChance>
+                    <MeleeDodgeChance>3</MeleeDodgeChance>
+                </statOffsets>
+                <painFactor>0.5</painFactor>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityDef ParentName="RoleAuraBuffBase">
+        <defName>BEWH_ChaplainChant</defName>
+        <label>chaplain chant</label>
+        <description>The Chaplain chants the Chapter's sacred battle creeds, and inspires their brethren to greater feats of bravery.</description>
+        <iconPath>UI/Roles/ChaplainRoleIcon</iconPath>
+        <warmupMoteSocialSymbol>UI/Roles/ChaplainRoleIcon</warmupMoteSocialSymbol>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>BEWH_ChaplainAura</hediffDef>
+                <onlyBrain>True</onlyBrain>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

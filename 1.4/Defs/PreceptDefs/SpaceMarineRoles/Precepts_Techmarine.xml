@@ -4,7 +4,7 @@
   <PreceptDef ParentName="BEWH_SpaceMarineMultiRoleBase">
     <defName>BEWH_Techmarine</defName>
     <label>Techmarine</label>
-    <description>...</description>
+    <description>Techmarines also serve as mechanics and technicians to their respective Chapters.</description>
     <iconPath>UI/Roles/TechmarineRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleTechmarine</nameMaker>
     <roleTags>

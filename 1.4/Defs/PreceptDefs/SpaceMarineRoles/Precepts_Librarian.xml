@@ -4,7 +4,7 @@
   <PreceptDef ParentName="BEWH_SpaceMarineMultiRoleBase">
     <defName>BEWH_Librarian</defName>
     <label>Librarian</label>
-    <description>...</description>
+    <description>Librarians fulfill several important specialist roles in a Chapter and are among the most knowledgeable of the Chapter's history and traditions.</description>
     <iconPath>UI/Roles/LibrarianRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleLibrarian</nameMaker>
     <roleTags>
