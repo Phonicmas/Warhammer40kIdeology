@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="PreceptRoleSingleBase">
+    <defName>BEWH_VoxCaster</defName>
+    <label>Vox caster</label>
+    <description>...</description>
+    <iconPath>UI/Roles/ChampionRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleVoxCaster</nameMaker>
+  </PreceptDef>
+
+  <!-- Apothecary Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleVoxCaster</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->vox caster</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

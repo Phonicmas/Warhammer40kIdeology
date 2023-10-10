@@ -11,6 +11,9 @@ namespace Ideology40k
 
         public static ThoughtDef BEWH_InteractedWithChampionMood;
 
+        public static HediffDef BEWH_ChallengeInstigator;
+        public static HediffDef BEWH_ChallengeReciever;
+
         static Ideology40kDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(Ideology40kDefOf));

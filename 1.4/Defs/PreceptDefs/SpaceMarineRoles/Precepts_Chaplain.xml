@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="BEWH_SpaceMarineSingleRoleBase">
+    <defName>BEWH_Chaplain</defName>
+    <label>Chaplain</label>
+    <description>...</description>
+    <iconPath>UI/Roles/ChaplainRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleChaplain</nameMaker>
+    <certaintyLossFactor>0.05</certaintyLossFactor>
+    <roleTags>
+      <li>BEWH_Chaplain</li>
+    </roleTags>
+    <requiredMemes>
+      <li>BEWH_Imperial</li>
+    </requiredMemes>
+    <displayOrderInImpact>2</displayOrderInImpact>
+    <convertPowerFactor>2.5</convertPowerFactor>
+    <grantedAbilities>
+      <li>Convert</li>
+      <li>Counsel</li>
+      <li>Reassure</li>
+      <li>ConversionRitual</li>
+      <li>PreachHealth</li>
+    </grantedAbilities>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Social>10</Social>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTags>
+      <li>Social</li>
+    </roleRequiredWorkTags>
+  </PreceptDef>
+
+  <!-- Apothecary Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleChaplain</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->chaplain</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PreceptDef ParentName="PreceptRoleSingleBase">
+  <PreceptDef ParentName="BEWH_SpaceMarineSingleRoleBase">
     <defName>BEWH_Champion</defName>
     <label>Champion</label>
-    <description>The Champion is a consummate warrior who is charged with defending the honour of his company, his Chapter and the Emperor of Mankind Himself..</description>
+    <description>The Champion is a consummate warrior who is charged with defending the honour of his company, his Chapter and the Emperor of Mankind Himself.</description>
     <iconPath>UI/Roles/ChampionRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleChampion</nameMaker>
     <roleTags>
@@ -14,9 +14,9 @@
       <li>BEWH_Imperial</li>
     </requiredMemes>
     <displayOrderInImpact>2</displayOrderInImpact>
-    <!--<grantedAbilities>
-      <li>???</li>
-    </grantedAbilities>-->
+    <grantedAbilities>
+      <li>BEWH_ChampionChallenge</li>
+    </grantedAbilities>
     <roleRequirements>
       <li Class="RoleRequirement_MinSkillAny">
         <skills>

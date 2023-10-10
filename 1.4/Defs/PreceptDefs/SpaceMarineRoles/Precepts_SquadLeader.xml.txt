@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="BEWH_SpaceMarineMultiRoleBase">
+    <defName>BEWH_SquadLeader</defName>
+    <label>Squad leader</label>
+    <description>...</description>
+    <iconPath>UI/Roles/ChampionRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleSquadLeader</nameMaker>
+    <roleTags>
+      <li>BEWH_SquadLeader</li>
+    </roleTags>
+    <requiredMemes>
+      <li>BEWH_Imperial</li>
+    </requiredMemes>
+    <displayOrderInImpact>2</displayOrderInImpact>
+    <grantedAbilities>
+      <li>MarksmanCommand</li>
+    </grantedAbilities>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Shooting>12</Shooting>
+          <Intellectual>7</Intellectual>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTags>
+      <li>Violent</li>
+    </roleRequiredWorkTags>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>ShootingAccuracyPawn</statDef>
+        <modifier>5</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>AimingDelayFactor</statDef>
+        <modifier>-0.5</modifier>
+      </li>
+    </roleEffects>
+  </PreceptDef>
+
+  <!-- Apothecary Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleSquadLeader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->squad leader</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

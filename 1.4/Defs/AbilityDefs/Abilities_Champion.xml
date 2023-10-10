@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityGroupDef>
+        <defName>BEWH_Champion</defName>
+        <cooldownTicks>15000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityDef Abstract="True" Name="BEWH_ChampionBase">
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <targetRequired>true</targetRequired>
+        <showWhenDrafted>true</showWhenDrafted>
+        <hostile>false</hostile>
+    </AbilityDef>
+
+    <AbilityDef ParentName="BEWH_ChampionBase">
+        <defName>BEWH_ChampionChallenge</defName>
+        <label>Incite duel</label>
+        <description>Incite target to duel the champion, increasing damage to target, decreasing damage from target and greatly decrease damage from everyone else.</description>
+        <groupDef>BEWH_Champion</groupDef>
+        <iconPath>UI/Roles/ChampionRoleIcon</iconPath>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>19</range>
+            <warmupTime>2</warmupTime>
+            <targetParams>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetBloodfeeders>false</canTargetBloodfeeders>
+                <canTargetCorpses>false</canTargetCorpses>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="Ideology40k.CompProperties_AbilityChampionChallenge" />
+        </comps>
+    </AbilityDef>
+
+</Defs>

@@ -61,6 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompProperties_AbilityChampionChallenge.cs" />
+    <Compile Include="Comp_AbilityChampionChallenge.cs" />
+    <Compile Include="HarmonyPatch_ChampionChallenge.cs" />
+    <Compile Include="DefModExtension_ChampionChallenge.cs" />
     <Compile Include="ThoughtWorker_Champion.cs" />
     <Compile Include="Ideology40kMod.cs" />
     <Compile Include="Ideology40kDefOf.cs" />

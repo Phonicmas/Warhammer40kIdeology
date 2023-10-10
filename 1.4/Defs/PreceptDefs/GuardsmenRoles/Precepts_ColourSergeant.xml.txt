@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="PreceptRoleSingleBase">
+    <defName>BEWH_ColourSergeant</defName>
+    <label>Colour sergeant</label>
+    <description>...</description>
+    <iconPath>UI/Roles/ChampionRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleColourSergeant</nameMaker>
+  </PreceptDef>
+
+  <!-- Apothecary Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleColourSergeant</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->colour sergeant</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PreceptDef ParentName="PreceptRoleSingleBase">
+  <PreceptDef ParentName="BEWH_SpaceMarineMultiRoleBase">
     <defName>BEWH_Apothecary</defName>
     <label>Apothecary</label>
     <description>The Apothecary is responsible for collecting the geneseeds of fallen brothers and ensuring general health.</description>

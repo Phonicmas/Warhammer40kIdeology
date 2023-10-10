@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef Abstract="True" Name="BEWH_SpaceMarineSingleRoleBase">
+    <issue>IdeoRole</issue>
+    <preceptClass>Precept_RoleSingle</preceptClass>
+    <certaintyLossFactor>0.2</certaintyLossFactor>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <roleRequirements>
+      <li Class="RoleRequirement_SameIdeo">
+        <labelKey>RoleRequirementLabelSameIdeo</labelKey>
+      </li>
+      <li Class="RoleRequirement_SupremeGender">
+        <labelKey>RoleRequirementLabelSupremeGender</labelKey>
+      </li>
+    </roleRequirements>
+    <impact>Medium</impact>
+    <activationBelieverCount>2</activationBelieverCount>
+    <deactivationBelieverCount>0</deactivationBelieverCount>
+    <classicExtra>true</classicExtra>
+  </PreceptDef>
+
+  <PreceptDef Abstract="True" Name="BEWH_SpaceMarineMultiRoleBase">
+    <issue>IdeoRole</issue>
+    <preceptClass>Precept_RoleMulti</preceptClass>
+    <certaintyLossFactor>0.2</certaintyLossFactor>
+    <createsRoleEmptyThought>False</createsRoleEmptyThought>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <roleRequirements>
+      <li Class="RoleRequirement_SameIdeo">
+        <labelKey>RoleRequirementLabelSameIdeo</labelKey>
+      </li>
+    </roleRequirements>
+    <impact>Medium</impact>
+    <classicExtra>true</classicExtra>
+  </PreceptDef>
+
+</Defs>

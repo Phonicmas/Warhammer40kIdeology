@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Challenge Base -->
+    <HediffDef Name="BEWH_ChallengeBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <everCurableByItem>false</everCurableByItem>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-8</severityPerDay>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- Challenge Instigator -->
+    <HediffDef ParentName="BEWH_ChallengeBase">
+        <defName>BEWH_ChallengeInstigator</defName>
+        <label>Challenged another pawn</label>
+        <description>This pawn has been challenged by another pawn</description>
+        <modExtensions>
+            <li Class="Ideology40k.DefModExtension_ChampionChallenge">
+                <damageMultiplier>0.75</damageMultiplier>
+                <damageMultiplierOther>0.2</damageMultiplierOther>
+                <IsChallenger>True</IsChallenger>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+
+    <!-- Challenge Reciever -->
+    <HediffDef ParentName="BEWH_ChallengeBase">
+        <defName>BEWH_ChallengeReciever</defName>
+        <label>Challenged by another pawn</label>
+        <description>This pawn has challenge another pawn</description>
+        <modExtensions>
+            <li Class="Ideology40k.DefModExtension_ChampionChallenge">
+                <damageMultiplier>1.25</damageMultiplier>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+</Defs>
