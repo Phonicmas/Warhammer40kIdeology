@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef>
+    <defName>BEWH_Chaos</defName>
+    <label>Chaos</label>
+    <description>Chaos rules all.</description>
+    <category>Structure</category>
+    <iconPath>World/WorldObjects/Chaos/ChaosWhiteIcon</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>Chaos Shrine</worshipRoomLabel>
+    <deityCount>1</deityCount>
+    <deityNameMakerOverride>BEWH_NamerDeityChaos</deityNameMakerOverride>
+    <deityTypeMakerOverride>BEWH_DeityTypeMakerChaos</deityTypeMakerOverride>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist</li>
+        <li>memeLeaderNoun->chaos lord</li>
+        <li>memeMoralist->dark apostle</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_Chaos</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Chaos</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+  <!-- Description for Faction-->
+  <IdeoStoryPatternDef>
+    <defName>BEWH_ChaosIdeoPattern</defName>
+    <segments>
+      <li>creation</li>
+    </segments>
+    <rules>
+      <rulesStrings>
+        <!-- generic creation -->
+        <li>creation->In an old universe of strife, the Gods of Chaos came forth in the warp as the emotions of itelligent being became stronger.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+
+  <!-- Icon for Faction-->
+  <IdeoIconDef>
+    <defName>BEWH_ChaosIcon</defName>
+    <iconPath>World/WorldObjects/Chaos/ChaosWhiteIcon</iconPath>
+    <memes>
+      <li>BEWH_Chaos</li>
+    </memes>
+  </IdeoIconDef>
+  <IdeoColorDef>
+    <defName>Gray</defName>
+    <colorDef>Gray</colorDef>
+    <memes>
+      <li>BEWH_Chaos</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>Gray</defName>
+    <color>(20, 20, 20)</color>
+  </ColorDef>
+
+  <!-- Rule Packs -->
+  <RulePackDef>
+    <defName>BEWH_NamerDeityChaos</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->Chaos Undivided</li>
+        <li>r_deityName->The Great Undivided</li>
+        <li>r_deityName->Undivided</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_DeityTypeMakerChaos</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->Chaos gods.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

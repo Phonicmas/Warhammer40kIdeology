@@ -2,11 +2,10 @@
 <Defs>
 
   <!-- Imperium Culture -->
-
   <CultureDef>
     <defName>BEWH_ImperiumCulture</defName>
-    <label>Space Marine Culture</label>
-    <description>The Emperors finest warriors, the Adeptus Astartes.</description>
+    <label>Imperium</label>
+    <description>The Emperors finest warriors.</description>
     <iconPath>World/WorldObjects/Imperium/ImperiumIcon</iconPath>
     <ideoNameMaker>BEWH_NamerIdeoImperium</ideoNameMaker>
     <deityNameMaker>BEWH_NamerDeityImperium</deityNameMaker>
@@ -77,9 +76,7 @@
     <defName>BEWH_DeityTypeMakerImperium</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_deityType->God Emperor of Mankind</li>
-        <li>r_deityType->God Emperor</li>
-        <li>r_deityType->Emperor of the Imperium</li>
+        <li>r_deityType->The God Emperor of Mankind protects all</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -92,7 +89,7 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
-  
+
   <RulePackDef>
     <defName>BEWH_NamerRitualFestivalImperium</defName>
     <rulePack>
@@ -101,5 +98,5 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
-  
+
 </Defs>

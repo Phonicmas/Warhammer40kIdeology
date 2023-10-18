@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Chaos -->
+  <CultureDef>
+    <defName>BEWH_ChaosCulture</defName>
+    <label>Chaos</label>
+    <description>Chaos undivided rules all.</description>
+    <iconPath>World/WorldObjects/Chaos/ChaosWhiteIcon</iconPath>
+    <ideoNameMaker>BEWH_NamerIdeoChaos</ideoNameMaker>
+    <leaderTitleMaker>BEWH_LeaderTitleMakerChaos</leaderTitleMaker>
+    <festivalNameMaker>BEWH_NamerRitualFestivalChaos</festivalNameMaker>
+    <preferredWeaponClasses>
+      <noble>Ultratech</noble>
+      <despised>Neolithic</despised>
+    </preferredWeaponClasses>
+    <allowedPlaceTags>
+      <li>OriginTechnoFeudal</li>
+    </allowedPlaceTags>
+    <styleItemTags>      <!-- Change to marauder/viking like hair-->
+      <li>
+        <tag>Shaved</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Rookie</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Topdog</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Recruit</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+
+  <!-- Rule Packs -->
+  <RulePackDef>
+    <defName>BEWH_NamerIdeoChaos</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->Chaos Undivided</li>
+        <li>r_ideoAdjective->Chaos</li>
+        <li>r_memberName->Cultist</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_LeaderTitleMakerChaos</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Chaos Lord</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_NamerRitualFestivalChaos</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ritualName->Heretical carnage</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

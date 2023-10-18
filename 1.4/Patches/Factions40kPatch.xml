@@ -3,22 +3,40 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Warhammer 40k - Factions</li>
+            <li>Warhammer 40.000 - Factions</li>
         </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/FactionDef[defName = "BEWH_ImperiumFaction"]</xpath>
-            <value>
-                <allowedCultures>
-                    <li>BEWH_ImperiumCulture</li>
-                </allowedCultures>
-                <requiredMemes>
-                    <li>BEWH_Imperial</li>
-                    <li>Transhumanist</li>
-                    <li>HumanPrimacy</li>
-                    <li>Loyalist</li>
-                    <li>Proselytizer</li>
-                </requiredMemes>
-            </value>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName = "BEWH_ImperiumFaction"]</xpath>
+                    <value>
+                        <allowedCultures>
+                            <li>BEWH_ImperiumCulture</li>
+                        </allowedCultures>
+                        <requiredMemes>
+                            <li>BEWH_Imperial</li>
+                            <li>Transhumanist</li>
+                            <li>HumanPrimacy</li>
+                            <li>Loyalist</li>
+                            <li>Proselytizer</li>
+                        </requiredMemes>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName = "BEWH_ChaosFactionHidden"]</xpath>
+                    <value>
+                        <allowedCultures>
+                            <li>BEWH_ChaosCulture</li>
+                        </allowedCultures>
+                        <requiredMemes>
+                            <li>BEWH_Chaos</li>
+                        </requiredMemes>
+                    </value>
+                </li>
+
+            </operations>
         </match>
     </Operation>
 
