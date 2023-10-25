@@ -6,7 +6,7 @@
     <defName>BEWH_ImperiumCulture</defName>
     <label>Imperium</label>
     <description>The Emperors finest warriors.</description>
-    <iconPath>World/WorldObjects/Imperium/ImperiumIcon</iconPath>
+    <iconPath>UI/Icons/Imperium/ImperiumIcon</iconPath>
     <ideoNameMaker>BEWH_NamerIdeoImperium</ideoNameMaker>
     <deityNameMaker>BEWH_NamerDeityImperium</deityNameMaker>
     <deityTypeMaker>BEWH_DeityTypeMakerImperium</deityTypeMaker>

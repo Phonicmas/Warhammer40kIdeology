@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_StructureBase">
+    <defName>BEWH_Khorne</defName>
+    <label>Khorne</label>
+    <description>Khorne rules all.</description>
+    <iconPath>UI/Icons/Chaos/KhorneWhiteIcon</iconPath>
+    <worshipRoomLabel>Khorne Shrine</worshipRoomLabel>
+    <deityNameMakerOverride>BEWH_NamerDeityKhorne</deityNameMakerOverride>
+    <deityTypeMakerOverride>BEWH_DeityTypeMakerKhorne</deityTypeMakerOverride>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist of Khorne</li>
+        <li>memeLeaderNoun->chaos lord of Khorne</li>
+        <li>memeMoralist->dark apostle of Khorne</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_KhorneStructure</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Khorne</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist of Khorne</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+
+  <!-- Icon for Structure-->
+  <IdeoIconDef>
+    <defName>BEWH_KhorneIcon</defName>
+    <iconPath>UI/Icons/Chaos/KhorneWhiteIcon</iconPath>
+    <memes>
+      <li>BEWH_Khorne</li>
+    </memes>
+  </IdeoIconDef>
+  <IdeoColorDef>
+    <defName>KhorneRed</defName>
+    <colorDef>KhorneRed</colorDef>
+    <memes>
+      <li>BEWH_Khorne</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>KhorneRed</defName>
+    <color>(151, 21, 21)</color>
+  </ColorDef>
+
+
+  <!-- Rule Packs -->
+  <RulePackDef>
+    <defName>BEWH_NamerDeityKhorne</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->Lord of skulls</li>
+        <li>r_deityName->Blood god</li>
+        <li>r_deityName->Khorne</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_DeityTypeMakerKhorne</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->Khorne</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

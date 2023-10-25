@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_ChaosMemeBase">
+    <defName>BEWH_TzeentchFollower</defName>
+    <label>Tzeentch Follower</label>
+    <description>Tzeentch is the superior god of chaos.</description>
+    <iconPath>UI/Icons/Chaos/TzeentchIcon</iconPath>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist of Tzeentch</li>
+        <li>memeLeaderNoun->chaos lord of Tzeentch</li>
+        <li>memeMoralist->dark apostle of Tzeentch</li>
+      </rulesStrings>
+    </generalRules>
+    <requireOne>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+      <li>
+        <li>Research_Fast</li>
+        <li>Research_VeryFast</li>
+      </li>
+      <li>
+        <li>Proselytizing_Sometimes</li>
+        <li>Proselytizing_Frequently</li>
+      </li>
+    </requireOne>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_TzeentchFollower</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Tzeentch</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist of Tzeentch</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+</Defs>

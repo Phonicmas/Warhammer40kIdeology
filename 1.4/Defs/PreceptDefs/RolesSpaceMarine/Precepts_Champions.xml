@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="BEWH_SpaceMarineSingleRoleBase" Name="BEWH_ChampionRole" Abstract="True">
+    <roleTags>
+      <li>BEWH_Champion</li>
+    </roleTags>
+    <displayOrderInImpact>2</displayOrderInImpact>
+    <grantedAbilities>
+      <li>BEWH_ChampionChallenge</li>
+    </grantedAbilities>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Melee>12</Melee>
+          <Shooting>12</Shooting>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTags>
+      <li>Violent</li>
+    </roleRequiredWorkTags>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MeleeHitChance</statDef>
+        <modifier>5</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MeleeDodgeChance</statDef>
+        <modifier>5</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>ShootingAccuracyPawn</statDef>
+        <modifier>5</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>AimingDelayFactor</statDef>
+        <modifier>-0.35</modifier>
+      </li>
+    </roleEffects>
+  </PreceptDef>
+
+
+  <!-- Imperium Champion -->
+  <PreceptDef ParentName="BEWH_ChampionRole">
+    <defName>BEWH_Champion</defName>
+    <label>Champion</label>
+    <description>The Champion is a consummate warrior who is charged with defending the honour of his company, his Chapter and the Emperor of Mankind Himself.</description>
+    <iconPath>UI/Roles/ChampionRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleChampion</nameMaker>
+    <requiredMemes>
+      <li>BEWH_Imperial</li>
+    </requiredMemes>
+  </PreceptDef>
+  <!-- Champion Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleChampion</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->champion</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+  <!-- Chaos Champion -->
+  <PreceptDef ParentName="BEWH_ChampionRole">
+    <defName>BEWH_ChaosChampion</defName>
+    <label>Chaos Champion</label>
+    <description>The Champion is a consummate warrior who is charged with defending the honour of his god.</description>
+    <iconPath>UI/Roles/ChaosChampionRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleChaosChampion</nameMaker>
+    <requiredMemes>
+      <li>BEWH_Khorne</li>
+      <li>BEWH_Nurgle</li>
+      <li>BEWH_Slaanesh</li>
+      <li>BEWH_Tzeentch</li>
+      <li>BEWH_Chaos</li>
+    </requiredMemes>
+  </PreceptDef>
+  <!-- Chaos Champion Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleChaosChampion</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->chaos champion</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

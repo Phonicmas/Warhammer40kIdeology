@@ -5,8 +5,8 @@
   <CultureDef>
     <defName>BEWH_ChaosCulture</defName>
     <label>Chaos</label>
-    <description>Chaos undivided rules all.</description>
-    <iconPath>World/WorldObjects/Chaos/ChaosWhiteIcon</iconPath>
+    <description>Chaos rules all.</description>
+    <iconPath>UI/Icons/Chaos/ChaosWhiteIcon</iconPath>
     <ideoNameMaker>BEWH_NamerIdeoChaos</ideoNameMaker>
     <leaderTitleMaker>BEWH_LeaderTitleMakerChaos</leaderTitleMaker>
     <festivalNameMaker>BEWH_NamerRitualFestivalChaos</festivalNameMaker>
@@ -52,7 +52,7 @@
     <defName>BEWH_NamerIdeoChaos</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_ideoName->Chaos Undivided</li>
+        <li>r_ideoName->Chaos</li>
         <li>r_ideoAdjective->Chaos</li>
         <li>r_memberName->Cultist</li>
       </rulesStrings>

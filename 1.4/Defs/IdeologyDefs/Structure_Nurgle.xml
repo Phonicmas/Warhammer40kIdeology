@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_StructureBase">
+    <defName>BEWH_Nurgle</defName>
+    <label>Nurgle</label>
+    <description>Nurgle rules all.</description>
+    <iconPath>UI/Icons/Chaos/NurgleWhiteIcon</iconPath>
+    <worshipRoomLabel>Nurgle Shrine</worshipRoomLabel>
+    <deityNameMakerOverride>BEWH_NamerDeityNurgle</deityNameMakerOverride>
+    <deityTypeMakerOverride>BEWH_DeityTypeMakerNurgle</deityTypeMakerOverride>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist of Nurgle</li>
+        <li>memeLeaderNoun->chaos lord of Nurgle</li>
+        <li>memeMoralist->dark apostle of Nurgle</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_NurgleStructure</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Nurgle</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist of Nurgle</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+
+  <!-- Icon for Structure-->
+  <IdeoIconDef>
+    <defName>BEWH_NurgleIcon</defName>
+    <iconPath>UI/Icons/Chaos/NurgleWhiteIcon</iconPath>
+    <memes>
+      <li>BEWH_Nurgle</li>
+    </memes>
+  </IdeoIconDef>
+  <IdeoColorDef>
+    <defName>NurgleGreen</defName>
+    <colorDef>NurgleGreen</colorDef>
+    <memes>
+      <li>BEWH_Nurgle</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>NurgleGreen</defName>
+    <color>(98, 140, 22)</color>
+  </ColorDef>
+
+
+  <!-- Rule Packs -->
+  <RulePackDef>
+    <defName>BEWH_NamerDeityNurgle</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->Lord of Decay</li>
+        <li>r_deityName->Plaguefather</li>
+        <li>r_deityName->Nurgle</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_DeityTypeMakerNurgle</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->Nurgle</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

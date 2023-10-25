@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_ChaosMemeBase">
+    <defName>BEWH_UndividedFollower</defName>
+    <label>Undivided Follower</label>
+    <description>Chaos is the rightful way.</description>
+    <iconPath>UI/Icons/Chaos/ChaosIcon</iconPath>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist</li>
+        <li>memeLeaderNoun->chaos lord</li>
+        <li>memeMoralist->dark apostle</li>
+      </rulesStrings>
+    </generalRules>
+    <requireOne>
+      <li>
+        <li>Raiding_Required</li>
+      </li>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+      <li>
+        <li>Proselytizing_Sometimes</li>
+        <li>Proselytizing_Frequently</li>
+      </li>
+      <li>
+        <li>Pain_Idealized</li>
+      </li>
+    </requireOne>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_UndividedFollower</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Undivided</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+</Defs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="BEWH_SpaceMarineMultiRoleBase" Name="BEWH_SorcererRole" Abstract="True">
+    <roleTags>
+      <li>BEWH_Sorcerer</li>
+    </roleTags>
+    <displayOrderInImpact>2</displayOrderInImpact>
+    <grantedAbilities>
+      <li>ResearchCommand</li>
+    </grantedAbilities>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Intellectual>10</Intellectual>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTags>
+      <li>Intellectual</li>
+    </roleRequiredWorkTags>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatFactor">
+        <statDef>ResearchSpeed</statDef>
+        <modifier>1.5</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatFactor">
+        <statDef>HackingSpeed</statDef>
+        <modifier>1.5</modifier>
+      </li>
+    </roleEffects>
+  </PreceptDef>
+
+
+  <!-- Imperium Sorcerer -->
+  <PreceptDef ParentName="BEWH_SorcererRole">
+    <defName>BEWH_Librarian</defName>
+    <label>Librarian</label>
+    <description>Librarians fulfill several important specialist roles in a Chapter and are among the most knowledgeable of the Chapter's history and traditions.</description>
+    <iconPath>UI/Roles/LibrarianRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleLibrarian</nameMaker>
+    <requiredMemes>
+      <li>BEWH_Imperial</li>
+    </requiredMemes>
+  </PreceptDef>
+  <!-- Librarian Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleLibrarian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->librarian</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+  <!-- Chaos Sorcerer -->
+  <PreceptDef ParentName="BEWH_SorcererRole">
+    <defName>BEWH_ChaosSorcerer</defName>
+    <label>Chaos Sorcerer</label>
+    <description>Chaos Sorcerers are often granted gifts by their god, which further enhance their psychic powers. Most are also often selfish madmen, believing themselves superior to all others</description>
+    <iconPath>UI/Roles/ChaosSorcererRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleChaosSorcerer</nameMaker>
+    <requiredMemes>
+      <li>BEWH_Khorne</li>
+      <li>BEWH_Nurgle</li>
+      <li>BEWH_Slaanesh</li>
+      <li>BEWH_Tzeentch</li>
+      <li>BEWH_Chaos</li>
+    </requiredMemes>
+  </PreceptDef>
+  <!-- Sorcerer Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleChaosSorcerer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->chaos sorcerer</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

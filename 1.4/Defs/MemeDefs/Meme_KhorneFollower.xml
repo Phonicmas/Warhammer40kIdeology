@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_ChaosMemeBase">
+    <defName>BEWH_KhorneFollower</defName>
+    <label>Khorne Follower</label>
+    <description>Khorne is the superior god of chaos.</description>
+    <iconPath>UI/Icons/Chaos/KhorneIcon</iconPath>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist of Khorne</li>
+        <li>memeLeaderNoun->chaos lord of Khorne</li>
+        <li>memeMoralist->dark apostle of Khorne</li>
+      </rulesStrings>
+    </generalRules>
+    <requireOne>
+      <li>
+        <li>Execution_DontCare</li>
+        <li>Execution_Required</li>
+      </li>
+      <li>
+        <li>Raiding_Required</li>
+      </li>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+    </requireOne>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_KhorneFollower</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Khorne</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist of Khorne</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+</Defs>

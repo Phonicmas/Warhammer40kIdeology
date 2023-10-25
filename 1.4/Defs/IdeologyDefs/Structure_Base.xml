@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <MemeGroupDef>
+        <defName>BEWH_Structures</defName>
+        <drawOffset>(0.3, 0.4)</drawOffset>
+    </MemeGroupDef>
+
+    <MemeDef Name="BEWH_StructureBase" Abstract="True">
+        <category>Structure</category>
+        <groupDef>BEWH_Structures</groupDef>
+        <impact>0</impact>
+        <deityCount>1</deityCount>
+    </MemeDef>
+
+</Defs>

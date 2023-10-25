@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="BEWH_SpaceMarineMultiRoleBase" Name="BEWH_TechmarineRole" Abstract="True">
+    <roleTags>
+      <li>BEWH_Techmarine</li>
+    </roleTags>
+    <displayOrderInImpact>2</displayOrderInImpact>
+    <grantedAbilities>
+      <li>ProductionCommand</li>
+    </grantedAbilities>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Crafting>10</Crafting>
+          <Construction>10</Construction>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTags>
+      <li>Crafting</li>
+      <li>Constructing</li>
+    </roleRequiredWorkTags>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatFactor">
+        <statDef>ConstructionSpeed</statDef>
+        <modifier>1.5</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatFactor">
+        <statDef>GeneralLaborSpeed</statDef>
+        <modifier>1.5</modifier>
+      </li>
+      <li Class="RoleEffect_ProductionQualityOffset">
+        <offset>1</offset>
+      </li>
+    </roleEffects>
+  </PreceptDef>
+
+
+  <!-- Imperium Techmarine -->
+  <PreceptDef ParentName="BEWH_TechmarineRole">
+    <defName>BEWH_Techmarine</defName>
+    <label>Techmarine</label>
+    <description>Techmarines serve as mechanics and technicians to their respective Chapters.</description>
+    <iconPath>UI/Roles/TechmarineRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleTechmarine</nameMaker>
+    <requiredMemes>
+      <li>BEWH_Imperial</li>
+    </requiredMemes>
+  </PreceptDef>
+  <!-- Techmarine Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleTechmarine</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->techmarine</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Chaos Warpsmith -->
+  <PreceptDef ParentName="BEWH_TechmarineRole">
+    <defName>BEWH_Warpsmith</defName>
+    <label>Warpsmith</label>
+    <description>Warpsmiths are fallen Chaos Space Marine Techmarine who now serves the Ruinous Powers through the creation of daemonic war engines.</description>
+    <iconPath>UI/Roles/ChaosTechmarineRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleWarpsmith</nameMaker>
+    <requiredMemes>
+      <li>BEWH_Khorne</li>
+      <li>BEWH_Nurgle</li>
+      <li>BEWH_Slaanesh</li>
+      <li>BEWH_Tzeentch</li>
+      <li>BEWH_Chaos</li>
+    </requiredMemes>
+  </PreceptDef>
+  <!-- Warpsmith Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleWarpsmith</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->warpsmith</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

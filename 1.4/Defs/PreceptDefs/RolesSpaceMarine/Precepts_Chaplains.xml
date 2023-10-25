@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="BEWH_SpaceMarineSingleRoleBase" Name="BEWH_ChaplainRole" Abstract="True">
+    <certaintyLossFactor>0.05</certaintyLossFactor>
+    <roleTags>
+      <li>BEWH_Chaplain</li>
+    </roleTags>
+    <displayOrderInImpact>2</displayOrderInImpact>
+    <convertPowerFactor>2.5</convertPowerFactor>
+    <grantedAbilities>
+      <li>Convert</li>
+      <li>Counsel</li>
+      <li>Reassure</li>
+      <li>ConversionRitual</li>
+      <li>BEWH_ChaplainChant</li>
+    </grantedAbilities>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Social>10</Social>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTags>
+      <li>Social</li>
+    </roleRequiredWorkTags>
+  </PreceptDef>
+
+
+  <!-- Imperium Chaplain -->
+  <PreceptDef ParentName="BEWH_ChaplainRole">
+    <defName>BEWH_Chaplain</defName>
+    <label>Chaplain</label>
+    <description>Space Marine Chaplains are the spiritual leaders of Space Marine Chapters, they fight alongside their battle-brothers, chanting the Chapter's sacred battle creeds, and inspiring their brethren to greater feats of bravery.</description>
+    <iconPath>UI/Roles/ChaplainRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleChaplain</nameMaker>
+    <requiredMemes>
+      <li>BEWH_Imperial</li>
+    </requiredMemes>
+  </PreceptDef>
+  <!-- Chaplain Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleChaplain</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->chaplain</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+  <!-- Chaos Chaplain -->
+  <PreceptDef ParentName="BEWH_ChaplainRole">
+    <defName>BEWH_ChaosChaplain</defName>
+    <label>Dark Apostle</label>
+    <description>Dark Apostles are the spiritual leaders within many Heretic Astartes Traitor Legions, and are utterly devoted to the Dark Gods and the preservation of the beliefs of their Primarchs and other leaders.</description>
+    <iconPath>UI/Roles/ChaosChaplainRoleIcon</iconPath>
+    <nameMaker>BEWH_NamerRoleChaosChaplain</nameMaker>
+    <requiredMemes>
+      <li>BEWH_Khorne</li>
+      <li>BEWH_Nurgle</li>
+      <li>BEWH_Slaanesh</li>
+      <li>BEWH_Tzeentch</li>
+      <li>BEWH_Chaos</li>
+    </requiredMemes>
+  </PreceptDef>
+  <!-- Chaos Chaplain Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleChaosChaplain</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->dark apostle</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

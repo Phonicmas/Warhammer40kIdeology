@@ -5,14 +5,14 @@
         <operations>
 
             <li Class="PatchOperationAdd">
-                <xpath>Defs/PreceptDef[defName = "BEWH_Apothecary"]/grantedAbilities</xpath>
+                <xpath>Defs/PreceptDef[@Name = "BEWH_ApothecaryRole"]/grantedAbilities</xpath>
                 <value>
                     <li>BEWH_ApothecaryHarvestGeneseeds</li>
                 </value>
             </li>
 
             <li Class="PatchOperationAdd">
-                <xpath>Defs/PreceptDef[defName = "BEWH_Apothecary"]/roleRequirements</xpath>
+                <xpath>Defs/PreceptDef[@Name = "BEWH_SpaceMarineSingleRoleBase"]/roleRequirements</xpath>
                 <value>
                     <li Class="Genes40k.RoleRequirement_MustBeSpaceMarine">
                         <genes>
@@ -41,7 +41,7 @@
             </li>
 
             <li Class="PatchOperationAdd">
-                <xpath>Defs/PreceptDef[defName = "BEWH_Champion"]/roleRequirements</xpath>
+                <xpath>Defs/PreceptDef[@Name = "BEWH_SpaceMarineMultiRoleBase"]/roleRequirements</xpath>
                 <value>
                     <li Class="Genes40k.RoleRequirement_MustBeSpaceMarine">
                         <genes>

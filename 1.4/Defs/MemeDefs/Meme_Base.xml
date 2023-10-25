@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef Name="BEWH_ChaosMemeBase" Abstract="True">
+    <category>Normal</category>
+    <impact>2</impact>
+    <deityCount>1</deityCount>
+    <exclusionTags>
+      <li>BEWH_ChaosFollower</li>
+    </exclusionTags>
+  </MemeDef>
+
+</Defs>

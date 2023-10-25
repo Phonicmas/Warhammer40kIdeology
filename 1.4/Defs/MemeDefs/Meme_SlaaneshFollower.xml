@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_ChaosMemeBase">
+    <defName>BEWH_SlaaneshFollower</defName>
+    <label>Slaanesh Follower</label>
+    <description>Slaanesh is the superior god of chaos.</description>
+    <iconPath>UI/Icons/Chaos/SlaaneshIcon</iconPath>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist of Slaanesh</li>
+        <li>memeLeaderNoun->chaos lord of Slaanesh</li>
+        <li>memeMoralist->dark apostle of Slaanesh</li>
+      </rulesStrings>
+    </generalRules>
+    <requireOne>
+      <li>
+        <li>Pain_Idealized</li>
+      </li>
+      <li>
+        <li>DrugUse_Essential</li>
+      </li>
+      <li>
+        <li>Lovin_FreeApproved</li>
+      </li>
+    </requireOne>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_SlaaneshFollower</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Slaanesh</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist of Slaanesh</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+</Defs>

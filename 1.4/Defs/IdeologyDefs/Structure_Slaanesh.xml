@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_StructureBase">
+    <defName>BEWH_Slaanesh</defName>
+    <label>Slaanesh</label>
+    <description>Slaanesh rules all.</description>
+    <iconPath>UI/Icons/Chaos/SlaaneshWhiteIcon</iconPath>
+    <worshipRoomLabel>Slaanesh Shrine</worshipRoomLabel>
+    <deityNameMakerOverride>BEWH_NamerDeitySlaanesh</deityNameMakerOverride>
+    <deityTypeMakerOverride>BEWH_DeityTypeMakerSlaanesh</deityTypeMakerOverride>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist of Slaanesh</li>
+        <li>memeLeaderNoun->chaos lord of Slaanesh</li>
+        <li>memeMoralist->dark apostle of Slaanesh</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_SlaaneshStructure</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Slaanesh</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist of Slaanesh</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+
+  <!-- Icon for Structure-->
+  <IdeoIconDef>
+    <defName>BEWH_SlaaneshIcon</defName>
+    <iconPath>UI/Icons/Chaos/SlaaneshWhiteIcon</iconPath>
+    <memes>
+      <li>BEWH_Slaanesh</li>
+    </memes>
+  </IdeoIconDef>
+  <IdeoColorDef>
+    <defName>SlaaneshPink</defName>
+    <colorDef>SlaaneshPink</colorDef>
+    <memes>
+      <li>BEWH_Slaanesh</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>SlaaneshPink</defName>
+    <color>(173, 33, 150)</color>
+  </ColorDef>
+
+
+  <!-- Rule Packs -->
+  <RulePackDef>
+    <defName>BEWH_NamerDeitySlaanesh</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->Lord of Excess</li>
+        <li>r_deityName->Dark Prince</li>
+        <li>r_deityName->Slaanesh</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_DeityTypeMakerSlaanesh</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->Slaanesh</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

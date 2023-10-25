@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Issue -->
+    <IssueDef>
+        <defName>BEWH_Mutations</defName>
+        <label>mutations</label>
+        <iconPath>UI/Issues/MutationPrecept</iconPath>
+    </IssueDef>
+
+    <!-- Precepts -->
+    <!-- Respected -->
+    <PreceptDef>
+        <defName>BEWH_Mutations_Respected</defName>
+        <issue>BEWH_Mutations</issue>
+        <label>respected</label>
+        <description>To be mutated is a thing worthy of respect.</description>
+        <impact>Medium</impact>
+        <displayOrderInIssue>300</displayOrderInIssue>
+        <displayOrderInImpact>1000</displayOrderInImpact>
+        <defaultSelectionWeight>0</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected</thought>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Social</thought>
+            </li>
+        </comps>
+    </PreceptDef>
+
+    <!-- Horrible -->
+    <PreceptDef>
+        <defName>BEWH_Mutations_Horrible</defName>
+        <issue>BEWH_Mutations</issue>
+        <impact>Medium</impact>
+        <label>horrible</label>
+        <displayOrderInIssue>306</displayOrderInIssue>
+        <displayOrderInImpact>1000</displayOrderInImpact>
+        <defaultSelectionWeight>0</defaultSelectionWeight>
+        <description>To be mutated is a heretical thing.</description>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Horrible</thought>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Psyker_Horrible_Social</thought>
+            </li>
+        </comps>
+    </PreceptDef>
+
+    <!-- Khorne only -->
+    <PreceptDef>
+        <defName>BEWH_Mutations_Respected_Khorne</defName>
+        <issue>BEWH_Mutations</issue>
+        <label>khorne mutations</label>
+        <description>To be mutated is a thing worthy of respect, but only if mutated by Khorne.</description>
+        <impact>Medium</impact>
+        <displayOrderInIssue>301</displayOrderInIssue>
+        <defaultSelectionWeight>0</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Specific</thought>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Social_Specific</thought>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Mutations40k.DefModExtension_PreceptSpecificGod">
+                <specificGod>Khorne</specificGod>
+            </li>
+        </modExtensions>
+    </PreceptDef>
+
+    <!-- Tzeentch only -->
+    <PreceptDef>
+        <defName>BEWH_Mutations_Respected_Tzeentch</defName>
+        <issue>BEWH_Mutations</issue>
+        <label>tzeentch mutations</label>
+        <description>To be mutated is a thing worthy of respect, but only if mutated by Tzeentch.</description>
+        <impact>Medium</impact>
+        <displayOrderInIssue>302</displayOrderInIssue>
+        <defaultSelectionWeight>0</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Specific</thought>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Social_Specific</thought>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Mutations40k.DefModExtension_PreceptSpecificGod">
+                <specificGod>Tzeentch</specificGod>
+            </li>
+        </modExtensions>
+    </PreceptDef>
+
+    <!-- Nurgle only -->
+    <PreceptDef>
+        <defName>BEWH_Mutations_Respected_Nurgle</defName>
+        <issue>BEWH_Mutations</issue>
+        <label>nurgle mutations</label>
+        <description>To be mutated is a thing worthy of respect, but only if mutated by Nurgle.</description>
+        <impact>Medium</impact>
+        <displayOrderInIssue>303</displayOrderInIssue>
+        <defaultSelectionWeight>0</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Specific</thought>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Social_Specific</thought>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Mutations40k.DefModExtension_PreceptSpecificGod">
+                <specificGod>Nurgle</specificGod>
+            </li>
+        </modExtensions>
+    </PreceptDef>
+
+    <!-- Slaanesh only -->
+    <PreceptDef>
+        <defName>BEWH_Mutations_Respected_Slaanesh</defName>
+        <issue>BEWH_Mutations</issue>
+        <label>slaanesh mutations</label>
+        <description>To be mutated is a thing worthy of respect, but only if mutated by Slaanesh.</description>
+        <impact>Medium</impact>
+        <displayOrderInIssue>303</displayOrderInIssue>
+        <defaultSelectionWeight>0</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Specific</thought>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>BEWH_Mutation_Respected_Social_Specific</thought>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Mutations40k.DefModExtension_PreceptSpecificGod">
+                <specificGod>Slaanesh</specificGod>
+            </li>
+        </modExtensions>
+    </PreceptDef>
+
+
+    <!-- Thoughts : Mutation -->
+    <!-- Respected Mutation Thought -->
+    <ThoughtDef>
+        <defName>BEWH_Mutation_Respected</defName>
+        <workerClass>Mutations40k.ThoughtWorker_Precept_Mutation</workerClass>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <stages>
+            <li>
+                <label>not mutated</label>
+                <description>I have not yet been granted a gift from the gods.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>slightly mutated</label>
+                <description>I have been granted a gift from the gods, a true blessing.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>mutated</label>
+                <description>I have been granted several gifts from the gods, a true blessings.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>greatly mutated</label>
+                <description>I have been granted many gifts from the gods, a true blessing.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>BEWH_Mutation_Respected_Social</defName>
+        <workerClass>Mutations40k.ThoughtWorker_Precept_Mutation_Social</workerClass>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <stages>
+            <li>
+                <label>not mutated</label>
+                <baseOpinionOffset>-5</baseOpinionOffset>
+            </li>
+            <li>
+                <label>slightly mutated</label>
+                <baseOpinionOffset>3</baseOpinionOffset>
+            </li>
+            <li>
+                <label>mutated</label>
+                <baseOpinionOffset>8</baseOpinionOffset>
+            </li>
+            <li>
+                <label>greatly mutated</label>
+                <baseOpinionOffset>20</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+
+    <!-- Horrible Mutation Thought -->
+    <ThoughtDef>
+        <defName>BEWH_Mutation_Horrible</defName>
+        <workerClass>Mutations40k.ThoughtWorker_Precept_Mutation</workerClass>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <stages>
+            <li>
+                <label>not mutated</label>
+                <description>My body is pure from heretical mutations</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>slightly mutated</label>
+                <description>I have been given a curse by the gods.</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>mutated</label>
+                <description>I have been cursed by the gods, what a cruel joke.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+            <li>
+                <label>severely mutated</label>
+                <description>I have been severely cursed by the gods, only death is my salvation now.</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>BEWH_Mutation_Horrible_Social</defName>
+        <workerClass>Mutations40k.ThoughtWorker_Precept_Mutation_Social</workerClass>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <stages>
+            <li>
+                <label>not mutated</label>
+                <baseOpinionOffset>5</baseOpinionOffset>
+            </li>
+            <li>
+                <label>slightly mutated</label>
+                <baseOpinionOffset>-10</baseOpinionOffset>
+            </li>
+            <li>
+                <label>mutated</label>
+                <baseOpinionOffset>-25</baseOpinionOffset>
+            </li>
+            <li>
+                <label>severely mutated</label>
+                <baseOpinionOffset>-50</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+
+    <!-- Respected Mutation Specific God Thought -->
+    <ThoughtDef>
+        <defName>BEWH_Mutation_Respected_Specific</defName>
+        <workerClass>Mutations40k.ThoughtWorker_Precept_Mutation_SpecificGod</workerClass>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <stages>
+            <li>
+                <label>wrongly mutated</label>
+                <description>Mutations by other gods are more prevelant than those from my god.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+            <li>
+                <label>not mutated</label>
+                <description>I have not yet been granted a gift from my god.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>slightly mutated</label>
+                <description>I have been granted a gift from my god, a true blessing.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>mutated</label>
+                <description>I have been granted several gifts from my god, a true blessings.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>greatly mutated</label>
+                <description>I have been granted many gifts from my god, a true blessing.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>BEWH_Mutation_Respected_Social_Specific</defName>
+        <workerClass>Mutations40k.ThoughtWorker_Precept_Mutation_Social_SpecificGod</workerClass>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <stages>
+            <li>
+                <label>wrongly mutated</label>
+                <baseOpinionOffset>-15</baseOpinionOffset>
+            </li>
+            <li>
+                <label>not mutated</label>
+                <baseOpinionOffset>-5</baseOpinionOffset>
+            </li>
+            <li>
+                <label>slightly mutated</label>
+                <baseOpinionOffset>3</baseOpinionOffset>
+            </li>
+            <li>
+                <label>mutated</label>
+                <baseOpinionOffset>8</baseOpinionOffset>
+            </li>
+            <li>
+                <label>greatly mutated</label>
+                <baseOpinionOffset>20</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

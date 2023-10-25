@@ -4,6 +4,7 @@
 		<li>/</li>
 		<li>1.4</li>
 		<li IfModActive="Phonicmas.40kGenes">1.4/Mods/Genes40k</li>
+		<li IfModActive="Phonicmas.40kMutations">1.4/Mods/Mutations40k</li>
 	</v1.4>
 	
 </loadFolders>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_ChaosMemeBase">
+    <defName>BEWH_NurgleFollower</defName>
+    <label>Nurgle Follower</label>
+    <description>Nurgle is the superior god of chaos.</description>
+    <iconPath>UI/Icons/Chaos/NurgleIcon</iconPath>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->cultist of Nurgle</li>
+        <li>memeLeaderNoun->chaos lord of Nurgle</li>
+        <li>memeMoralist->dark apostle of Nurgle</li>
+      </rulesStrings>
+    </generalRules>
+    <requireOne>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+      <li>
+        <li>Scarification_Extreme</li>
+        <li>Scarification_Heavy</li>
+        <li>Scarification_Minor</li>
+      </li>
+      <li>
+        <li>Cannibalism_Acceptable</li>
+      </li>
+    </requireOne>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ChaosIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_NurgleFollower</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Nurgle</ideoName>
+        <theme>faith</theme>
+        <adjective>chaotic</adjective>
+        <member>cultist of Nurgle</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+</Defs>
