@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="BEWH_GuardsmenSingleRoleBase">
+    <defName>BEWH_ColourSergeant</defName>
+    <label>Colour sergeant</label>
+    <description>Colour Sergeant is often bestowed upon Veteran and senior Sergeants and Sergeants Major as a reward for years of loyal service in the Imperial Guard.</description>
+    <iconPath>UI/Roles/SpecialistShooting</iconPath>
+    <nameMaker>BEWH_NamerRoleColourSergeant</nameMaker>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Melee>9</Melee>
+          <Shooting>9</Shooting>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTags>
+      <li>Violent</li>
+    </roleRequiredWorkTags>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MeleeHitChance</statDef>
+        <modifier>3</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MeleeDodgeChance</statDef>
+        <modifier>2</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>ShootingAccuracyPawn</statDef>
+        <modifier>3</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>AimingDelayFactor</statDef>
+        <modifier>-0.1</modifier>
+      </li>
+    </roleEffects>
+    <requiredMemes>
+      <li>BEWH_AstraMilitarum</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <!-- Apothecary Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleColourSergeant</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->colour sergeant</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

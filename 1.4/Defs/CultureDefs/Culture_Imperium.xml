@@ -77,6 +77,7 @@
     <rulePack>
       <rulesStrings>
         <li>r_deityType->The God Emperor of Mankind protects all</li>
+        <li>r_deityType->The God Emperor of Mankind is above all</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

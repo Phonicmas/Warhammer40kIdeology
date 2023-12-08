@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <MemeGroupDef>
+    <defName>BEWH_ChaosFollower</defName>
+    <drawOffset>(0, 0)</drawOffset>
+    <maxRows>1</maxRows>
+  </MemeGroupDef>
+
   <MemeDef Name="BEWH_ChaosMemeBase" Abstract="True">
     <category>Normal</category>
     <impact>2</impact>
     <deityCount>1</deityCount>
+    <groupDef>BEWH_ChaosFollower</groupDef>
     <exclusionTags>
       <li>BEWH_ChaosFollower</li>
     </exclusionTags>
+  </MemeDef>
+
+  <MemeDef Name="BEWH_ImperialMemeBase" Abstract="True">
+    <category>Normal</category>
+    <impact>2</impact>
+    <deityCount>1</deityCount>
+    <groupDef>Misc</groupDef>
+    <symbolPacks>
+      <li>
+        <ideoName>Imperial</ideoName>
+        <theme>faith</theme>
+        <adjective>imperialistic</adjective>
+        <member>imperial</member>
+      </li>
+    </symbolPacks>
   </MemeDef>
 
 </Defs>

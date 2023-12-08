@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Astra Militarum -->
+  <ThoughtDef>
+    <defName>BEWH_TendedByMedicae</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>100</stackLimit>
+    <stages>
+      <li>
+        <label>tended by {0}</label>
+        <description>I received medical aid from a Medicae!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

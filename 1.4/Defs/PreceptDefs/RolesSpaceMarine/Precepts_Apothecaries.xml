@@ -47,7 +47,7 @@
     <iconPath>UI/Roles/ApothecaryRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleApothecary</nameMaker>
     <requiredMemes>
-      <li>BEWH_Imperial</li>
+      <li>BEWH_AdeptusAstartes</li>
     </requiredMemes>
   </PreceptDef>
   <!-- Apothecary Namemaker-->
@@ -68,11 +68,11 @@
     <iconPath>UI/Roles/ChaosApothecaryRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleApothecary</nameMaker>
     <requiredMemes>
-      <li>BEWH_Khorne</li>
-      <li>BEWH_Nurgle</li>
-      <li>BEWH_Slaanesh</li>
-      <li>BEWH_Tzeentch</li>
-      <li>BEWH_Chaos</li>
+      <li>BEWH_KhorneFollower</li>
+      <li>BEWH_NurgleFollower</li>
+      <li>BEWH_SlaaneshFollower</li>
+      <li>BEWH_TzeentchFollower</li>
+      <li>BEWH_UndividedFollower</li>
     </requiredMemes>
   </PreceptDef>
 

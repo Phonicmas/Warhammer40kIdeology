@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef ParentName="BEWH_ImperialMemeBase">
+    <defName>BEWH_AdeptusAstartes</defName>
+    <label>Adeptus Astartes</label>
+    <description>The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's warriors.</description>
+    <iconPath>UI/Icons/Imperium/ImperiumIcon</iconPath>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->faithful</li>
+        <li>memeLeaderNoun->chapter master</li>
+        <li>memeMoralist->chaplain</li>
+      </rulesStrings>
+    </generalRules>
+    <requireOne>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+    </requireOne>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>BEWH_ImperialIdeoPattern</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>BEWH_AdeptusAstartes</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+  </MemeDef>
+
+</Defs>

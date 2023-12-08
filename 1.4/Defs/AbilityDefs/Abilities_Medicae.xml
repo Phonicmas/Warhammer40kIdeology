@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityGroupDef>
+        <defName>BEWH_Medicae</defName>
+        <cooldownTicks>15000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityDef Abstract="True" Name="BEWH_MedicaeBase">
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <targetRequired>true</targetRequired>
+        <showWhenDrafted>true</showWhenDrafted>
+        <hostile>false</hostile>
+    </AbilityDef>
+
+    <AbilityDef ParentName="BEWH_MedicaeBase">
+        <defName>BEWH_MedicaePainkillers</defName>
+        <label>Painkillers</label>
+        <description>Incite target to duel the champion, increasing damage to target, decreasing damage from target and greatly decrease damage from everyone else.</description>
+        <groupDef>BEWH_Medicae</groupDef>
+        <iconPath>UI/Roles/SpecialistMedical</iconPath>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <range>-1</range>
+            <warmupTime>2</warmupTime>
+            <targetParams>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetBloodfeeders>false</canTargetBloodfeeders>
+                <canTargetCorpses>false</canTargetCorpses>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>BEWH_MedicaePainkillers</hediffDef>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <HediffDef>
+        <defName>BEWH_MedicaePainkillers</defName>
+        <label>painkillers</label>
+        <labelNoun>painkillers</labelNoun>
+        <description>This pawn has been administered painkillers.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <painOffset>-0.5</painOffset>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>5000</disappearsAfterTicks>
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef ParentName="BEWH_GuardsmenMultiRoleBase">
+    <defName>BEWH_Medicae</defName>
+    <label>Medicae</label>
+    <description>The expertise and training of local chirurgeons and other medicae professionals varies enormously across the Imperium and depends on a wide range of factors.</description>
+    <iconPath>UI/Roles/SpecialistMedical</iconPath>
+    <nameMaker>BEWH_NamerRoleMedicae</nameMaker>
+    <displayOrderInImpact>2</displayOrderInImpact>
+    <grantedAbilities>
+      <li>ImmunityDrive</li>
+      <li>BEWH_MedicaePainkillers</li>
+    </grantedAbilities>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Medicine>7</Medicine>
+        </skills>
+      </li>
+    </roleRequirements>
+    <roleRequiredWorkTagAny>
+      <li>Caring</li>
+    </roleRequiredWorkTagAny>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MedicalTendQuality</statDef>
+        <modifier>0.5</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MedicalOperationSpeed</statDef>
+        <modifier>0.5</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MedicalSurgerySuccessChance</statDef>
+        <modifier>0.5</modifier>
+      </li>
+      <li Class="RoleEffect_GiveThoughtOnTend">
+        <thoughtDef>BEWH_TendedByMedicae</thoughtDef>
+      </li>
+    </roleEffects>
+    <requiredMemes>
+      <li>BEWH_AstraMilitarum</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <!-- Medicae Namemaker-->
+  <RulePackDef>
+    <defName>BEWH_NamerRoleMedicae</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->medicae</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

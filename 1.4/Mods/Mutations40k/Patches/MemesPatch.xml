@@ -49,6 +49,25 @@
                 </value>
             </li>
 
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/MemeDef[defName = "BEWH_AdeptusAstartes"]/requireOne</xpath>
+                <value>
+                    <li>
+                        <li>BEWH_Mutations_Horrible</li>
+                    </li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/MemeDef[defName = "BEWH_AstraMilitarum"]/requireOne</xpath>
+                <value>
+                    <li>
+                        <li>BEWH_Mutations_Horrible</li>
+                    </li>
+                </value>
+            </li>
+
+
         </operations>
     </Operation>
 

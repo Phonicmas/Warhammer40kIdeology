@@ -89,7 +89,7 @@
     <defName>BEWH_DeityTypeMakerChaos</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_deityType->Chaos gods.</li>
+        <li>r_deityType->Chaos gods</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

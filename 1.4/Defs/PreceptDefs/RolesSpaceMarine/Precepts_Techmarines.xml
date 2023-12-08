@@ -31,7 +31,7 @@
         <modifier>1.5</modifier>
       </li>
       <li Class="RoleEffect_ProductionQualityOffset">
-        <offset>1</offset>
+        <offset>2</offset>
       </li>
     </roleEffects>
   </PreceptDef>
@@ -45,7 +45,7 @@
     <iconPath>UI/Roles/TechmarineRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleTechmarine</nameMaker>
     <requiredMemes>
-      <li>BEWH_Imperial</li>
+      <li>BEWH_AdeptusAstartes</li>
     </requiredMemes>
   </PreceptDef>
   <!-- Techmarine Namemaker-->
@@ -66,11 +66,11 @@
     <iconPath>UI/Roles/ChaosTechmarineRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleWarpsmith</nameMaker>
     <requiredMemes>
-      <li>BEWH_Khorne</li>
-      <li>BEWH_Nurgle</li>
-      <li>BEWH_Slaanesh</li>
-      <li>BEWH_Tzeentch</li>
-      <li>BEWH_Chaos</li>
+      <li>BEWH_KhorneFollower</li>
+      <li>BEWH_NurgleFollower</li>
+      <li>BEWH_SlaaneshFollower</li>
+      <li>BEWH_TzeentchFollower</li>
+      <li>BEWH_UndividedFollower</li>
     </requiredMemes>
   </PreceptDef>
   <!-- Warpsmith Namemaker-->
