@@ -4,7 +4,7 @@
   <MemeDef ParentName="BEWH_ImperialMemeBase">
     <defName>BEWH_AstraMilitarum</defName>
     <label>Astra Militarum</label>
-    <description>The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy and serves as the Imperium of Man's primary military force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium.</description>
+    <description>The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. It serves as the Imperium's primary military force and first line of defense from the myriad threats which endanger the existence of the Human race in the 41st Millennium.</description>
     <iconPath>UI/Icons/Imperium/ImperiumIcon</iconPath>
     <generalRules>
       <rulesStrings>

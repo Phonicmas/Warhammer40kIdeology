@@ -58,7 +58,7 @@
   <PreceptDef ParentName="BEWH_SorcererRole">
     <defName>BEWH_ChaosSorcerer</defName>
     <label>Chaos Sorcerer</label>
-    <description>Chaos Sorcerers are often granted gifts by their god, which further enhance their psychic powers. Most are also often selfish madmen, believing themselves superior to all others</description>
+    <description>Chaos Sorcerers are often granted gifts by their god, which further enhance their psychic powers. Most are also selfish madmen, believing themselves superior to all others</description>
     <iconPath>UI/Roles/ChaosSorcererRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleChaosSorcerer</nameMaker>
     <requiredMemes>

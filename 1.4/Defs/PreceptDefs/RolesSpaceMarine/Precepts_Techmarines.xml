@@ -62,7 +62,7 @@
   <PreceptDef ParentName="BEWH_TechmarineRole">
     <defName>BEWH_Warpsmith</defName>
     <label>Warpsmith</label>
-    <description>Warpsmiths are fallen Chaos Space Marine Techmarine who now serves the Ruinous Powers through the creation of daemonic war engines.</description>
+    <description>Warpsmiths are fallen Chaos Space Marine Techmarines who now serve the Ruinous Powers through the creation of daemonic war engines.</description>
     <iconPath>UI/Roles/ChaosTechmarineRoleIcon</iconPath>
     <nameMaker>BEWH_NamerRoleWarpsmith</nameMaker>
     <requiredMemes>

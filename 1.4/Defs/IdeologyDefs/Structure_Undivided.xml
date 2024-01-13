@@ -4,7 +4,7 @@
   <MemeDef ParentName="BEWH_StructureBase">
     <defName>BEWH_Chaos</defName>
     <label>Undivided</label>
-    <description>Undivided rules all.</description>
+    <description>Chaos Undivided rules all.</description>
     <iconPath>UI/Icons/Chaos/ChaosWhiteIcon</iconPath>
     <worshipRoomLabel>Undivided Shrine</worshipRoomLabel>
     <deityNameMakerOverride>BEWH_NamerDeityChaos</deityNameMakerOverride>

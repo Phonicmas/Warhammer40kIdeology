@@ -4,7 +4,7 @@
   <PreceptDef ParentName="BEWH_GuardsmenMultiRoleBase">
     <defName>BEWH_Techpriest</defName>
     <label>Techpriest</label>
-    <description>A Techpriest is an adept of the Adeptus Mechanicus of the Imperium of Man who is generally responsible for maintaining all of the advanced technology of the Imperium</description>
+    <description>A Techpriest is an adept of the Adeptus Mechanicus of the Imperium of Man who is generally responsible for maintaining all of the advanced technology of the Imperium.</description>
     <iconPath>UI/Roles/SpecialistProduction</iconPath>
     <nameMaker>BEWH_NamerRoleTechpriest</nameMaker>
     <displayOrderInImpact>2</displayOrderInImpact>

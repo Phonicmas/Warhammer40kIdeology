@@ -16,8 +16,8 @@
 
     <AbilityDef ParentName="BEWH_ApothecaryBase">
         <defName>BEWH_ApothecaryHarvestGeneseeds</defName>
-        <label>harvest geneseeds</label>
-        <description>Harvest the geneseeds of a fallen brother.</description>
+        <label>harvest geneseed</label>
+        <description>Harvest the geneseed of a fallen brother.</description>
         <groupDef>BEWH_Apothecary</groupDef>
         <iconPath>UI/Abilities/ApothecaryGeneseedHarvestIcon</iconPath>
         <jobDef>CastAbilityOnThingMelee</jobDef>
