@@ -3,8 +3,8 @@
 
   <PreceptDef ParentName="BEWH_GuardsmenSingleRoleBase">
     <defName>BEWH_ColourSergeant</defName>
-    <label>Colour sergeant</label>
-    <description>Colour Sergeant is often bestowed upon Veteran and senior Sergeants and Sergeants Major as a reward for years of loyal service in the Imperial Guard.</description>
+    <label>Colour Sergeant</label>
+    <description>Colour sergeant is a rank often bestowed upon veteran and senior sergeants and sergeant majors as a reward for years of loyal service in the Imperial Guard.</description>
     <iconPath>UI/Roles/SpecialistShooting</iconPath>
     <nameMaker>BEWH_NamerRoleColourSergeant</nameMaker>
     <roleRequirements>
@@ -46,7 +46,7 @@
     <defName>BEWH_NamerRoleColourSergeant</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_roleName->colour sergeant</li>
+        <li>r_roleName->Colour Sergeant</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

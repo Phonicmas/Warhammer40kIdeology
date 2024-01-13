@@ -18,8 +18,8 @@
     <!-- Challenge Instigator -->
     <HediffDef ParentName="BEWH_ChallengeBase">
         <defName>BEWH_ChallengeInstigator</defName>
-        <label>Challenged another pawn</label>
-        <description>This pawn has been challenged by another pawn</description>
+        <label>challenged another pawn</label>
+        <description>This pawn has challenged another pawn.</description>
         <modExtensions>
             <li Class="Ideology40k.DefModExtension_ChampionChallenge">
                 <damageMultiplier>0.75</damageMultiplier>
@@ -33,8 +33,8 @@
     <!-- Challenge Reciever -->
     <HediffDef ParentName="BEWH_ChallengeBase">
         <defName>BEWH_ChallengeReciever</defName>
-        <label>Challenged by another pawn</label>
-        <description>This pawn has challenge another pawn</description>
+        <label>challenged by another pawn</label>
+        <description>This pawn has been challenged by another pawn.</description>
         <modExtensions>
             <li Class="Ideology40k.DefModExtension_ChampionChallenge">
                 <damageMultiplier>1.25</damageMultiplier>

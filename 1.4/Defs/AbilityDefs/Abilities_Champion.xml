@@ -17,7 +17,7 @@
     <AbilityDef ParentName="BEWH_ChampionBase">
         <defName>BEWH_ChampionChallenge</defName>
         <label>Incite duel</label>
-        <description>Incite target to duel the champion, increasing damage to target, decreasing damage from target and greatly decrease damage from everyone else.</description>
+        <description>Provoke the target to duel with the champion, increasing damage to the target, decreasing damage from the target and greatly lowering damage from everyone else.</description>
         <groupDef>BEWH_Champion</groupDef>
         <iconPath>UI/Roles/ChampionRoleIcon</iconPath>
         <jobDef>CastAbilityOnThing</jobDef>

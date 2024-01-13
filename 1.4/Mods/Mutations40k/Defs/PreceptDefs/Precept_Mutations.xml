@@ -165,7 +165,7 @@
             </li>
             <li>
                 <label>mutated</label>
-                <description>I have been granted several gifts from the gods, a true blessings.</description>
+                <description>I have been granted several gifts from the gods, a true blessing.</description>
                 <baseMoodEffect>4</baseMoodEffect>
             </li>
             <li>
@@ -209,7 +209,7 @@
         <stages>
             <li>
                 <label>not mutated</label>
-                <description>My body is pure from heretical mutations</description>
+                <description>My body is pure from heretical mutations.</description>
                 <baseMoodEffect>3</baseMoodEffect>
             </li>
             <li>
@@ -263,7 +263,7 @@
         <stages>
             <li>
                 <label>wrongly mutated</label>
-                <description>Mutations by other gods are more prevelant than those from my god.</description>
+                <description>Mutations from other gods are more prevalent than those from my god.</description>
                 <baseMoodEffect>-8</baseMoodEffect>
             </li>
             <li>
@@ -278,7 +278,7 @@
             </li>
             <li>
                 <label>mutated</label>
-                <description>I have been granted several gifts from my god, a true blessings.</description>
+                <description>I have been granted several gifts from my god, a true blessing.</description>
                 <baseMoodEffect>4</baseMoodEffect>
             </li>
             <li>

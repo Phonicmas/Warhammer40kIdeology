@@ -4,7 +4,7 @@
   <MemeDef ParentName="BEWH_ImperialMemeBase">
     <defName>BEWH_AdeptusAstartes</defName>
     <label>Adeptus Astartes</label>
-    <description>The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's warriors.</description>
+    <description>The Space Marines or Adeptus Astartes are the foremost defenders of Humanity, the greatest warriors of the Emperor of Mankind.</description>
     <iconPath>UI/Icons/Imperium/ImperiumIcon</iconPath>
     <generalRules>
       <rulesStrings>
