@@ -14,6 +14,11 @@
         <labelKey>RoleRequirementLabelSupremeGender</labelKey>
       </li>
     </roleRequirements>
+    <roleApparelRequirementCountCurve>
+      <points>
+        <li>(0, 1)</li>
+      </points>
+    </roleApparelRequirementCountCurve>
     <impact>Medium</impact>
     <activationBelieverCount>2</activationBelieverCount>
     <deactivationBelieverCount>0</deactivationBelieverCount>
@@ -31,6 +36,11 @@
         <labelKey>RoleRequirementLabelSameIdeo</labelKey>
       </li>
     </roleRequirements>
+    <roleApparelRequirementCountCurve>
+      <points>
+        <li>(0, 1)</li>
+      </points>
+    </roleApparelRequirementCountCurve>
     <impact>Medium</impact>
     <classicExtra>true</classicExtra>
   </PreceptDef>

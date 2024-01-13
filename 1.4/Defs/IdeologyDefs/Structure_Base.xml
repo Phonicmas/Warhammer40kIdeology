@@ -11,6 +11,7 @@
         <groupDef>BEWH_Structures</groupDef>
         <impact>0</impact>
         <deityCount>1</deityCount>
+        <preventApparelRequirements>true</preventApparelRequirements>
     </MemeDef>
 
 </Defs>

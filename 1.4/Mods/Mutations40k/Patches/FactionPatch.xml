@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName = "BEWH_ImperiumFaction"]</xpath>
+                <value>
+                    <disallowedMemes>
+                        <li>BEWH_KhorneFollower</li>
+                        <li>BEWH_NurgleFollower</li>
+                        <li>BEWH_SlaaneshFollower</li>
+                        <li>BEWH_TzeentchFollower</li>
+                        <li>BEWH_UndividedFollower</li>
+                    </disallowedMemes>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName = "BEWH_ChaosFactionHidden"]</xpath>
+                <value>
+                    <disallowedMemes>
+                        <li>BEWH_AdeptusAstartes</li>
+                        <li>BEWH_AstraMilitarum</li>
+                    </disallowedMemes>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>
